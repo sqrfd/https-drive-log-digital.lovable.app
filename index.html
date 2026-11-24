@@ -162,6 +162,14 @@ nav .mx-navic.on{color:inherit}
 @media (min-width:640px){.mx-nav-actions{bottom:12px}}
 .mx-nav-open{display:inline-flex;align-items:center;gap:.4rem;border-radius:999px;background:#0f172a;color:#fff;padding:.5rem 1rem;font-size:.8rem;font-weight:700}
 body:not(:has(.mx-tabbar)) .mx-nav-actions{bottom:12px}
+@media (max-width:639.98px){
+header .anim-pop.absolute.top-full{position:fixed;top:calc(100% + 6px);inset-inline:12px;left:12px;right:12px;width:auto;max-width:none;margin-top:0;max-height:calc(100dvh - var(--mx-hdr,64px) - 96px - env(safe-area-inset-bottom));overflow-y:auto;overscroll-behavior:contain;border-radius:1.25rem;transform-origin:top center}
+header .anim-pop.absolute.top-full .truncate{white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:anywhere}
+header .anim-pop.absolute.top-full .max-h-72{max-height:none}
+header .anim-pop.absolute.top-full button,header .anim-pop.absolute.top-full p,header .anim-pop.absolute.top-full span{white-space:normal;overflow-wrap:anywhere}
+header .anim-pop.absolute.top-full .w-56,header .anim-pop.absolute.top-full .w-72{width:auto}
+}
+@media (max-width:379.98px){header .mx-uname:not(.mx-uname-a){display:none}header .mx-ubtn{padding-inline-end:.25rem}}
 </style>
   </head>
   <body>
